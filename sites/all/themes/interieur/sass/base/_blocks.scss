@@ -1,0 +1,34 @@
+#block-views-nieuws-block-1{
+  @include span-columns(8, 12);
+  margin-right: 0px;
+  .block__content{
+    max-width: 500px;
+    .views-field-title a{
+      color: $gray;
+      font-size: 1.1em;
+      font-weight: bold;
+    }
+    .views-field-view-node{
+      text-align: right;
+    }
+    a{
+      text-decoration: none;
+    }
+  }
+}
+
+#block-views-vrienden-van-faydherbe-block-1{
+  @include span-columns(4, 12);
+  margin-right: 0px;
+  h2{
+    float: right;
+  }
+  .content{
+    text-align: right;
+    a{
+      text-decoration: none;
+      display: block;
+      margin-top: 5px;
+    }
+  }
+}

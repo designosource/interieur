@@ -1,0 +1,36 @@
+name = interieur
+description = Please provide a description for your theme.
+base theme = omega
+screenshot = screenshot.png
+engine = phptemplate
+core = 7.x
+
+; ========================================
+; Stylesheets
+; ========================================
+stylesheets[all][] = css/interieur.normalize.css
+stylesheets[all][] = css/interieur.hacks.css
+stylesheets[all][] = css/interieur.styles.css
+stylesheets[all][] = css/interieur.no-query.css
+stylesheets[all][] = css/layouts/interieur/interieur.layout.css
+
+; ========================================
+; Scripts
+; ========================================
+scripts[] = js/interieur.behaviors.js
+scripts[] = js/jquery.cycle2.min.js
+
+; ========================================
+; Regions
+; ========================================
+regions[branding] = Branding
+regions[header] = Header
+regions[banner] = Banner
+regions[highlighted] = Highlighted
+regions[help] = Help
+regions[content] = Content
+regions[sidebar_first] = First Sidebar
+regions[sidebar_second] = Second Sidebar
+regions[footer_first]   = First Footer
+regions[footer_second]  = Second Footer
+regions[footer_third]   = Third Footer

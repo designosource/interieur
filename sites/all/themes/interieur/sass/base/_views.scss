@@ -1,0 +1,29 @@
+.view-filters{
+  margin-bottom: 30px;
+  .bef-checkboxes div{
+    display: inline-block;
+    margin-right: 30px;
+  }
+}
+
+.nieuws{
+  .views-row{
+    border-bottom: 1px solid $orange;
+    padding: 30px;
+    .views-field-title{
+      display: block;
+      text-decoration: none;
+      color: $gray;
+      font-weight: bold;
+      padding: 10px 0 10px 0;
+    }
+    .views-field-view-node a{
+      text-align: right;
+      text-decoration: none;
+      display: block;
+    }
+  }
+  .views-row-first{
+    background-color: $light-gray;
+  }
+}

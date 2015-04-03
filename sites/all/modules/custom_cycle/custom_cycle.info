@@ -1,0 +1,4 @@
+name = Cycle Image style
+description = "Custom image style to add cycle on an image"
+core = 7.x
+package = Custom

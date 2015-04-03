@@ -1,0 +1,23 @@
+p.title{
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.node--nieuws{
+  a{
+    display: block;
+    text-decoration: none;
+    margin-bottom: 20px;
+  }
+  .field--name-field-summary{
+    font-weight: bold;
+  }
+}
+ul.flippy{
+  li{
+    display: inline-block;
+    padding: 0px;
+  }
+  li.next{
+    float: right;
+  }
+}

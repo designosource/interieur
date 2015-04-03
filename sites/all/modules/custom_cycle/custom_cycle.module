@@ -1,0 +1,108 @@
+<?php
+/**
+* Implements hook_field_formatter_info().
+*/
+function custom_cycle_field_formatter_info() {
+  $formatters = array(
+    'interieur_cycle_image' => array(
+      'label'       => t('Cycle Image (custom formatter)'),
+      'field types' => array('image'),
+      'settings'    => array(
+        'image_style' => '',
+        'image_link'  => '',
+        'slider_type' => '',
+        'slider_delay'=> '',
+      ),
+    ),
+  );
+
+  return $formatters;
+}
+
+/**
+* Implements hook_field_formatter_view().
+*/
+function custom_cycle_field_formatter_view($entity_type, $entity, $field, $instance, $langcode, $items, $display) {
+  $element = array();
+  $settings = $display['settings'];
+
+  switch ($display['type']) {
+    case 'interieur_cycle_image':
+      foreach ($items as $delta => $item) {
+        $element[$delta] = array(
+          '#theme' => 'image_formatter',
+          '#item' => array(
+            'uri' => $item['uri'],
+            'attributes' => array(
+              'data-cycle-title'  => $item['title'],
+              'data-cycle-desc'   => $item['alt'],
+            ),
+          ),
+          '#image_style' => $display['settings']['image_style'],
+        );
+      }
+
+      $element['#prefix'] = '<div class="cycle-slideshow" data-cycle-fx='.$display['settings']['slider_type'].' data-cycle-timeout='.$display['settings']['slider_delay'].' data-cycle-pager=".cycle-pager"><div class="cycle-overlay"></div>';
+
+      $element['#suffix'] = '</div><div class="cycle-pager"></div>';
+
+      break;
+  }
+
+  return $element;
+}
+
+/**
+ * Implements hook_field_formatter_settings_form().
+ */
+function custom_cycle_field_formatter_settings_form($field, $instance, $view_mode, $form, &$form_state) {
+  $display = $instance['display'][$view_mode];
+  $settings = $display['settings'];
+  $element = array();
+  $image_styles = image_style_options(FALSE, PASS_THROUGH);
+
+  $element['image_style'] = array(
+    '#type'           => 'select',
+    '#title'          => t('Image style'),
+    '#description'    => t('Select the image style for the cycle'),
+    '#default_value'  => $settings['image_style'],
+    '#options'        => $image_styles,
+  );
+  $element['slider_type'] = array(
+    '#type'           => 'select',
+    '#title'          => t('Slider type'),
+    '#description'    => t('Select the type of the slider'),
+    '#default_value'  => $settings['slider_type'],
+    '#options'        => array(
+      'scrollHorz'  => 'Slide',
+      'fade'        => 'Fade',
+      'flipHorz'    => 'Flip',
+    ),
+  );
+  $element['slider_delay'] = array(
+    '#type'           => 'select',
+    '#title'          => t('Slider delay'),
+    '#description'    => t('Select the delay of the slider'),
+    '#default_value'  => $settings['slider_delay'],
+    '#options'        => array(
+      '1000'  => '1000',
+      '2000'  => '2000',
+      '3000'  => '3000',
+      '4000'  => '4000',
+    ),
+  );
+
+  return $element;
+}
+
+/**
+ * Implements hook_field_formatter_settings_summary().
+ */
+function custom_cycle_field_formatter_settings_summary($field, $instance, $view_mode) {
+  $display = $instance['display'][$view_mode];
+  $settings = $display['settings'];
+  $summary = t('Image style: @size', array(
+    '@size'     => $settings['image_style'],
+  ));
+  return $summary;
+}

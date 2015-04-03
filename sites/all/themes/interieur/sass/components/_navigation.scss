@@ -1,0 +1,25 @@
+nav{
+  h2{
+    display: none;
+  }
+  .menu{
+    text-align: right;
+    li{
+      display: inline-block;
+      margin-right: 20px;
+      a:link, a:visited{
+        text-decoration: none;
+        color: $gray;
+        font-weight: bold;
+        padding: 0 0 5px 0;
+      }
+      a.active{
+        border-bottom: 1px solid;
+        color: $orange;
+      }
+    }
+    li:last-child{
+      margin-right: 0px;
+    }
+  }
+}
