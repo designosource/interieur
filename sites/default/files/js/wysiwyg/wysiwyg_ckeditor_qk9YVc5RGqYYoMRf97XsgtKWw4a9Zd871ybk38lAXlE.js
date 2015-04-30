@@ -1,0 +1,1 @@
+window.CKEDITOR_BASEPATH = '/interieur/sites/all/libraries/ckeditor/';
