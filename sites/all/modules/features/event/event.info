@@ -1,0 +1,8 @@
+name = Event
+description = All settings for content type event
+core = 7.x
+package = Interieur
+version = 7.x-0.1
+project = event
+features[features_api][] = api:2
+project path = sites/all/modules/features
