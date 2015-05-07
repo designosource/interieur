@@ -32,3 +32,25 @@
     }
   }
 }
+
+#block-views-evenementen-block-1{
+  h2{
+    color: $orange;
+    border-bottom: none;
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 1.2em;
+  }
+  .views-row{
+    vertical-align: top;
+    height: 200px;
+    overflow: hidden;
+    @include span-columns(2, 10);
+    img{
+      width: 100%;
+    }
+    &:last-child{
+      @include span-columns(2 omega, 10);
+    }
+  }
+}

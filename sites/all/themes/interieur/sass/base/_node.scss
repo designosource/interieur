@@ -21,3 +21,44 @@ ul.flippy{
     float: right;
   }
 }
+
+.node--event{
+  #multi-images{
+    @include span-columns(4, 12);
+    .event-image-overlay{
+      width: 150px;
+      height: 150px;
+      overflow: hidden;
+      float: left;
+      margin: 25px 25px 0 0;
+      &:first-child{
+        width: 325px;
+        height: 300px;
+        display: block;
+        margin: 0px;
+        float: none;
+      }
+      &:last-child{
+        margin-right: 0px;
+      }
+      img{
+        width: 100%;
+        min-height: 100%;
+      }
+    }
+  }
+  #event-text{
+    @include span-columns(8 omega, 12);
+    h1{
+      color: $orange;
+      border-bottom: none;
+      text-transform: uppercase;
+      width: 100%;
+      margin-top: 0;
+    }
+    #inschrijven{
+      display: block;
+      margin-top: 10px;
+    }
+  }
+}
