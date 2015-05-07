@@ -27,3 +27,26 @@
     background-color: $light-gray;
   }
 }
+
+.evenementen{
+  .views-row{
+    border-bottom: 1px solid $orange;
+    padding: 30px;
+    display: block;
+    clear: both;
+    height: 360px;
+    position: relative;
+    .views-field-field-multi-images{
+      float: left;
+      margin-right: 30px;
+    }
+    .views-field-title{
+      font-weight: bold;
+    }
+    .views-field-view-node{
+      bottom: 30px;
+      position: absolute;
+      right: 30px;
+    }
+  }
+}

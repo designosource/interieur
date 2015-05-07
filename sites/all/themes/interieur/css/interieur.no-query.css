@@ -123,6 +123,27 @@ body {
 .nieuws .views-row-first {
   background-color: #e5e5e4; }
 
+/* line 32, ../sass/base/_views.scss */
+.evenementen .views-row {
+  border-bottom: 1px solid #f04c25;
+  padding: 30px;
+  display: block;
+  clear: both;
+  height: 360px;
+  position: relative; }
+  /* line 39, ../sass/base/_views.scss */
+  .evenementen .views-row .views-field-field-multi-images {
+    float: left;
+    margin-right: 30px; }
+  /* line 43, ../sass/base/_views.scss */
+  .evenementen .views-row .views-field-title {
+    font-weight: bold; }
+  /* line 46, ../sass/base/_views.scss */
+  .evenementen .views-row .views-field-view-node {
+    bottom: 30px;
+    position: absolute;
+    right: 30px; }
+
 /* line 1, ../sass/components/_banner.scss */
 .l-banner {
   text-align: center; }
