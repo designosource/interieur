@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Nieuws feature.
- */
-
-include_once 'nieuws.features.inc';
