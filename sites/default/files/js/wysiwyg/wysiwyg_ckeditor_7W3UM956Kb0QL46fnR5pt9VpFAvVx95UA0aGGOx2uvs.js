@@ -1,1 +1,0 @@
-window.CKEDITOR_BASEPATH = '/DRUPAL/interieur/sites/all/libraries/ckeditor/';
