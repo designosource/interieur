@@ -175,6 +175,56 @@ function vitrine_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-vitrine-field_multi_images'
+  $field_instances['node-vitrine-field_multi_images'] = array(
+    'bundle' => 'vitrine',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 6,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_multi_images',
+    'label' => 'Multi_images',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => '',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'preview_image_style' => 'thumbnail',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => 40,
+    ),
+  );
+
   // Exported field_instance: 'node-vitrine-field_website'
   $field_instances['node-vitrine-field_website'] = array(
     'bundle' => 'vitrine',
@@ -238,6 +288,7 @@ function vitrine_field_default_field_instances() {
   t('Body');
   t('Categorie_vitrine');
   t('Email');
+  t('Multi_images');
   t('Website');
 
   return $field_instances;
