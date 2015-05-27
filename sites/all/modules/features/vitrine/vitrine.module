@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Vitrine feature.
- */
-
-include_once 'vitrine.features.inc';

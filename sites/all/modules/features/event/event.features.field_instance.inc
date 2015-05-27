@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * event_content_type.features.field_instance.inc
+ * event.features.field_instance.inc
  */
 
 /**
  * Implements hook_field_default_field_instances().
  */
-function event_content_type_field_default_field_instances() {
+function event_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance: 'node-event-body'

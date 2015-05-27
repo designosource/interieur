@@ -1,23 +1,16 @@
 <?php
 /**
  * @file
- * slideshow.features.inc
+ * event.features.inc
  */
-
-/**
- * Implements hook_views_api().
- */
-function slideshow_views_api($module = NULL, $api = NULL) {
-  return array("api" => "3.0");
-}
 
 /**
  * Implements hook_node_info().
  */
-function slideshow_node_info() {
+function event_node_info() {
   $items = array(
-    'slideshow' => array(
-      'name' => t('Slideshow'),
+    'event' => array(
+      'name' => t('Event'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',

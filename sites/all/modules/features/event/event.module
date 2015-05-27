@@ -1,5 +1,7 @@
 <?php
 /**
  * @file
- * Drupal needs this blank file.
+ * Code for the Event feature.
  */
+
+include_once 'event.features.inc';
