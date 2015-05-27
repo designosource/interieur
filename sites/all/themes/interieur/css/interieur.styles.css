@@ -179,7 +179,7 @@ body {
 /* line 10, ../sass/base/_views.scss */
 .nieuws .views-row {
   border-bottom: 1px solid #f04c25;
-  padding: 30px; }
+  padding: 30px 150px 30px 150px; }
   /* line 13, ../sass/base/_views.scss */
   .nieuws .views-row .views-field-title {
     display: block;
@@ -264,9 +264,24 @@ footer {
     text-decoration: none;
     text-transform: uppercase; }
   /* line 11, ../sass/components/_footer.scss */
+  footer .logo {
+    display: inline-block;
+    height: 75px;
+    vertical-align: top; }
+    /* line 15, ../sass/components/_footer.scss */
+    footer .logo:last-child {
+      margin-left: 25px;
+      padding: 5px 0 10px 0; }
+      /* line 18, ../sass/components/_footer.scss */
+      footer .logo:last-child img {
+        height: 60px; }
+    /* line 22, ../sass/components/_footer.scss */
+    footer .logo img {
+      height: 75px; }
+  /* line 26, ../sass/components/_footer.scss */
   footer .icons {
     margin: 0 5px 0 0; }
-    /* line 13, ../sass/components/_footer.scss */
+    /* line 28, ../sass/components/_footer.scss */
     footer .icons img {
       width: 25px; }
 

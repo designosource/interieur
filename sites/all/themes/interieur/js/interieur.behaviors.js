@@ -38,19 +38,5 @@
    *   Drupal.settings directly you should use this because of potential
    *   modifications made by the Ajax callback that also produced 'context'.
    */
-  Drupal.behaviors.FrontSlider = {
-    attach: function (context, settings) {
-
-      $('.front', context).once('FrontSlider', function () {
-
-        /*$(".view-front-slider .field-content").cycle({
-          fx: 'scrollHorz',
-          timeout: 4000,
-          pager: '.bullet-pager',
-        });*/
-
-      });
-    }
-  };
 
 })(jQuery);
