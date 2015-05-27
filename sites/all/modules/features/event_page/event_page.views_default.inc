@@ -218,7 +218,7 @@ function event_page_views_default_views() {
   $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['label'] = '';
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['view_node']['text'] = 'Read more';
+  $handler->display->display_options['fields']['view_node']['text'] = 'Lees meer';
   $handler->display->display_options['block_description'] = 'Last news';
   $export['nieuws'] = $view;
 
