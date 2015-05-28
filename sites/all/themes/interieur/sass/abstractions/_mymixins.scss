@@ -1,0 +1,7 @@
+@mixin blur($pixels) {
+  -webkit-filter: blur($pixels);
+  -moz-filter:    blur($pixels);
+  -o-filter:      blur($pixels);
+  -ms-filter:     blur($pixels);
+  filter:         blur($pixels);
+}

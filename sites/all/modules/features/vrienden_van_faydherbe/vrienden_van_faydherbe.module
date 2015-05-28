@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Vrienden van Faydherbe feature.
+ */
+
+include_once 'vrienden_van_faydherbe.features.inc';
