@@ -39,4 +39,20 @@
    *   modifications made by the Ajax callback that also produced 'context'.
    */
 
+   Drupal.behaviors.vriendenActiveren = {
+    attach: function (context, settings) {
+
+      $( ".vriend" ).on( "click", function() {
+
+        $( ".vriend" ).not('active').removeClass('active');
+        $(this).toggleClass('active');
+        $( ".vriend" ).not('active').addClass('degraded');
+        $( ".vriend.active" ).removeClass('degraded');
+
+
+      });
+
+    }
+  };
+
 })(jQuery);

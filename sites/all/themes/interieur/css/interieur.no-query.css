@@ -10,7 +10,6 @@ h1, h2 {
 a:link, a:visited {
   color: #f04c25; }
 
-/* No files to import found in abstractions/**\/* */
 /* line 1, ../sass/base/_blocks.scss */
 #block-views-nieuws-block-1 {
   width: 66.10169%;
@@ -216,6 +215,66 @@ body {
     bottom: 30px;
     position: absolute;
     right: 30px; }
+
+/* line 55, ../sass/base/_views.scss */
+.vrienden .vriend {
+  width: 23.72881%;
+  float: left;
+  margin-right: 1.69492%;
+  display: inline;
+  position: relative;
+  cursor: pointer; }
+  /* line 59, ../sass/base/_views.scss */
+  .vrienden .vriend .image-overlay {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    position: relative; }
+    /* line 64, ../sass/base/_views.scss */
+    .vrienden .vriend .image-overlay img {
+      width: 100%;
+      min-height: 250px; }
+    /* line 68, ../sass/base/_views.scss */
+    .vrienden .vriend .image-overlay span {
+      position: absolute;
+      z-index: 1;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      text-transform: uppercase;
+      color: white;
+      width: 100%;
+      padding: 10px;
+      text-align: center; }
+  /* line 80, ../sass/base/_views.scss */
+  .vrienden .vriend .extra-info {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    width: 100%;
+    display: none; }
+  /* line 92, ../sass/base/_views.scss */
+  .vrienden .vriend.active .extra-info {
+    display: block; }
+  /* line 97, ../sass/base/_views.scss */
+  .vrienden .vriend.degraded .image-overlay {
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px); }
+  /* line 100, ../sass/base/_views.scss */
+  .vrienden .vriend.degraded:after {
+    content: '';
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background: #333333;
+    opacity: 0.5; }
 
 /* line 1, ../sass/components/_banner.scss */
 .l-banner {
