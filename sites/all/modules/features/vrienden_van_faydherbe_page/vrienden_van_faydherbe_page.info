@@ -1,0 +1,12 @@
+name = Vrienden van Faydherbe page
+description = All settings for view of vrienden van faydherbe
+core = 7.x
+package = Interieur
+version = 7.x-0.1
+project = vrienden_van_faydherbe_page
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[views_view][] = vrienden_van_faydherbe
+features_exclude[dependencies][ctools] = ctools
+project path = sites/all/modules/features
