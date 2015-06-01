@@ -17,10 +17,11 @@
       font-weight: bold;
       padding: 10px 0 10px 0;
     }
-    .views-field-view-node a{
+    .views-field-view-node{
       text-align: right;
-      text-decoration: none;
-      display: block;
+      a{
+        text-decoration: none;
+      }
     }
   }
   .views-row-first{
@@ -47,11 +48,14 @@
       bottom: 30px;
       position: absolute;
       right: 30px;
+      a{
+        text-decoration: none;
+      }
     }
   }
 }
 
-.vrienden{
+#vrienden-page{
   .vriend{
     @include span-columns(3,12);
     position: relative;
@@ -60,7 +64,7 @@
       width: 100%;
       height: 250px;
       overflow: hidden;
-      position: absolute;
+      position: relative;
       img{
         width: 100%;
         min-height: 250px;

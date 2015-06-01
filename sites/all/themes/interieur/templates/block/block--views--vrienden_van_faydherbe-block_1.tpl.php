@@ -55,6 +55,6 @@
 
   <div class="content"<?php print $content_attributes; ?>>
     <?php print $content ?>
-    <a href="vrienden-van-faydherbe">Bekijk in vrienden van Faydherbe</a>
+    <a href="vrienden-van-faydherbe">Bekijk in vrienden van Faydherbe</a><img class="link-arrow" src="<?php echo base_path() . 'sites/all/themes/interieur/images/arrow.svg' ?>">
   </div>
 </div>

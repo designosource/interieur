@@ -10,6 +10,11 @@ h1, h2 {
 a:link, a:visited {
   color: #f04c25; }
 
+/* line 5, ../sass/variables/_links.scss */
+.views-field-view-node .link-arrow {
+  width: 10px;
+  margin-left: 5px; }
+
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 /*! normalize.css v3.0.0 | HTML5 Display Definitions | MIT License | git.io/normalize */
 /* line 9, ../../../../../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
