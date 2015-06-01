@@ -49,6 +49,17 @@
         $( ".vriend" ).not('active').addClass('degraded');
         $( ".vriend.active" ).removeClass('degraded');
 
+      });
+
+    }
+  };
+
+  Drupal.behaviors.searchToggle = {
+    attach: function (context, settings) {
+
+      $( "#search-icon" ).on( "click", function() {
+
+        $( '#block-search-form input' ).toggleClass('expand');
 
       });
 
