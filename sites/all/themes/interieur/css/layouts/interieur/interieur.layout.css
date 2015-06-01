@@ -5,7 +5,7 @@
  * and building mobile first layouts.
  ******************************************************************************/
 /* line 28, ../../../sass/layouts/interieur/interieur.layout.scss */
-.l-branding {
+.l-branding, .l-region--header {
   margin-top: 10px; }
 
 /* line 32, ../../../sass/layouts/interieur/interieur.layout.scss */
