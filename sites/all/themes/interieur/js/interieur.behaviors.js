@@ -66,4 +66,13 @@
     }
   };
 
+  Drupal.behaviors.searchToggle = {
+    attach: function (context, settings) {
+
+      var path = Drupal.settings.pathToTheme.pathToTheme;
+      $( ".views-field-view-node a" ).after("<img class='link-arrow' src='"+path+"/images/arrow.svg'>");
+
+    }
+  };
+
 })(jQuery);
