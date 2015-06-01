@@ -1,0 +1,4 @@
+name = Custom interieur settings
+description = "All custom data for interieur website"
+core = 7.x
+package = Interieur
