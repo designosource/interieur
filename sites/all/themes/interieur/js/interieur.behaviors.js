@@ -66,7 +66,7 @@
     }
   };
 
-  Drupal.behaviors.searchToggle = {
+  Drupal.behaviors.moreArrow = {
     attach: function (context, settings) {
 
       var path = Drupal.settings.pathToTheme.pathToTheme;
