@@ -114,10 +114,12 @@
     </div>
 
     <div id="event-text">
+      <?php dpm($content); ?>
       <h1><?php print render($node->title); ?></h1>
       <?php print render($content['field_street']); ?>
       <?php print render($content['field_city']); ?>
       <a href="" id="inschrijven">Schrijf je in voor dit event</a>
+      <?php print render($content['sharethis']); ?>
       <?php print render($content['body']); ?>
     </div>
 
