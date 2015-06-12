@@ -22,6 +22,15 @@ ul.flippy{
   }
 }
 
+.sharethis-buttons{
+  margin-top: 20px;
+  .sharethis-wrapper{
+    .stMainServices{
+      height: 25px;
+    }
+  }
+}
+
 .node--event{
   #multi-images{
     @include span-columns(4, 12);
