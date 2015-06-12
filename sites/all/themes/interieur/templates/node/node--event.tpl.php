@@ -114,7 +114,6 @@
     </div>
 
     <div id="event-text">
-      <?php dpm($content); ?>
       <h1><?php print render($node->title); ?></h1>
       <?php print render($content['field_street']); ?>
       <?php print render($content['field_city']); ?>
